@@ -1,0 +1,31 @@
+.ui.attached.tabular.menu {
+    padding-right: 250px;
+    overflow-y: hidden;
+    border: none;
+
+    .item {
+        padding: 11.2px 25px;
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: $boldWeight;
+        margin-bottom: -1px;
+        color: $blackWith80;
+
+        &.active {
+            border-color: $lightGray;
+            border-radius: 4px 4px 0 0 !important;
+        }
+    }
+}
+
+.ui.attached:not(.message):not(.text)+.ui.attached.segment:not(.top):not([class*="left attached"]):not([class*="right attached"]) {
+    border-top: 1px solid $lightSilver;
+    border-color: $lightSilver;
+    box-shadow: none;
+    border-radius: 0 0 8px 8px;
+    padding: 25px;
+    min-height: 450px;
+    height: 450px;
+    overflow: hidden;
+    overflow-y: auto;
+}

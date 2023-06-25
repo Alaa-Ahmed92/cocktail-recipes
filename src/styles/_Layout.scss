@@ -1,0 +1,22 @@
+.wrapper-box {
+    position: relative;
+
+    // Customize the scrollbar
+    ::-webkit-scrollbar {
+        height: 4px;
+        width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $lightSilver;
+        border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #ccc;
+    }
+}

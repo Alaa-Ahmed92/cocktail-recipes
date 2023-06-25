@@ -1,0 +1,10 @@
+@import './fonts';
+@import './variables';
+@import './components/Components';
+@import './Layout';
+@import './responsive';
+
+.app {
+    font-family: 'Lato', sans-serif;
+    padding: 3rem 0;
+}

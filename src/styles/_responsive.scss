@@ -1,0 +1,96 @@
+$breakpoint-xs: 575.98px;
+$breakpoint-sm: 767.98px;
+$breakpoint-md: 991.98px;
+$breakpoint-lg: 1199.98px;
+$breakpoint-xl: 1399.98px;
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: $breakpoint-xs) {
+    .charts .chartBar .recharts-wrapper {
+        width: auto !important;
+
+        svg {
+            width: 100% !important;
+        }
+    }
+
+    .ui.card {
+        margin: auto;
+    }
+
+    .chartBar {
+        margin-bottom: 20px;
+    }
+
+    .ui.search {
+        position: relative;
+        margin-bottom: 20px;
+        width: auto;
+        padding: 0;
+        text-align: left;
+
+        .ui.input,
+        .ui.input input {
+            width: 100%;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    .ui.card {
+        margin: auto;
+    }
+
+    .chartBar {
+        margin-bottom: 20px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    .ui.card {
+        margin: auto;
+    }
+
+    .chartBar {
+        margin-left: 15px;
+    }
+
+    .ui.breadcrumb,
+    .wrapper-box {
+        padding-left: 15px;
+    }
+
+    .charts .chartBar .recharts-wrapper {
+        width: auto !important;
+
+        svg {
+            width: 100% !important;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .chartBar {
+        margin-left: 15px;
+    }
+
+    .ui.breadcrumb,
+    .wrapper-box {
+        padding-left: 15px;
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
+    .chartBar {
+        margin-left: 15px;
+    }
+
+    .ui.breadcrumb,
+    .wrapper-box {
+        padding-left: 15px;
+    }
+}

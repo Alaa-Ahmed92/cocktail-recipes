@@ -1,0 +1,24 @@
+.charts {
+    margin-top: 30px;
+
+    .recharts-legend-wrapper {
+        display: none;
+    }
+
+    .chartBar {
+        text-align: center;
+        box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+        border-radius: 8px;
+        padding: 25px;
+
+        h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 3rem;
+        }
+
+        .recharts-wrapper {
+            margin: auto;
+        }
+    }
+}

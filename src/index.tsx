@@ -1,16 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { Provider } from 'react-redux';
+import 'fomantic-ui-css/semantic.min.css';
+
 import App from './App';
+import './styles/App.scss';
+import store from './redux/store';
 import reportWebVitals from './reportWebVitals';
+import ErrorBoundary from './Layout/ErrorBoundary';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

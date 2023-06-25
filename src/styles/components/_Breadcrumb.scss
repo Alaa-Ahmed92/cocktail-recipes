@@ -1,0 +1,12 @@
+.ui.breadcrumb {
+    margin-bottom: 36px;
+
+    .section {
+        color: $mediumGray;
+        font-weight: $mediumWeight;
+
+        &.active {
+            color: $blackWith87;
+        }
+    }
+}
